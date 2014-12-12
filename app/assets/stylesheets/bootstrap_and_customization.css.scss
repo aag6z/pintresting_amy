@@ -16,3 +16,7 @@ $jumbotron-bg:white;
 .navbar-brand {
      font-weight: bold;
 }
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+      position: absolute;
+      margin-left: 0px;
+}
