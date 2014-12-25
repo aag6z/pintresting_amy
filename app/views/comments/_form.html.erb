@@ -1,0 +1,25 @@
+<%= form_for(@comment, :url=>pin_comments_path(@pin)) do |f| %>
+  <% if @comment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
+
+      <ul>
+      <% @comment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<% pin_url = params[:url] %>
+
+<div class="box panel panel-default">
+<%= image_tag pin_url%>
+</div>
+  <div class="form-group">
+    <%= f.label :text %><br>
+    <%= f.text_field :text, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.submit class: "btn btn-primary"%>
+  </div>
+<% end %>
