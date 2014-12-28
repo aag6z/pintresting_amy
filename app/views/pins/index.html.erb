@@ -27,9 +27,13 @@
             		<% end %>
           		</div>
         	<% end %>
+        	<br>
         	<% @comments = pin.comments %>
         	<% @comments.each do |comment|%>
-        	<%= comment.text %><br>
+        	<blockquote>
+        	<%= comment.text %>
+        	</blockquote>
+        	<br>
         	<% end %>
       		</div>
   			</div>

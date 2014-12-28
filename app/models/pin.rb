@@ -7,6 +7,6 @@ class Pin < ActiveRecord::Base
       :default_url => "missing.jpg",
       :use_timestamp => false
      validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png"]
-     has_many :comments
+     has_many :comments, dependent: :destroy
 
 end
