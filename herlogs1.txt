@@ -1,0 +1,101 @@
+2014-12-29T00:30:20.936269+00:00 app[web.1]: 
+2014-12-29T00:30:20.936270+00:00 app[web.1]: 
+2014-12-29T00:30:20.930226+00:00 app[web.1]: [AWS S3 403 0.06101 0 retries] put_object(:acl=>:public_read,:bucket_name=>"amypint",:content_length=>51096,:content_type=>"image/jpeg",:data=>Paperclip::UploadedFileAdapter: rashidajones_hair.jpg,:key=>"users/avatars/000/000/009/original/rashidajones_hair.jpg") AWS::S3::Errors::AccessDenied Access Denied
+2014-12-29T00:30:20.930231+00:00 app[web.1]: 
+2014-12-29T00:30:20.932858+00:00 app[web.1]: Completed 500 Internal Server Error in 671ms
+2014-12-29T00:30:21.078542+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=arcane-citadel-8613.herokuapp.com request_id=6bc0ba9a-eac2-498f-9251-8caab5acd5e3 fwd="69.137.229.2" dyno=web.1 connect=1ms service=5ms status=304 bytes=133
+2014-12-29T00:32:53.082759+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=arcane-citadel-8613.herokuapp.com request_id=141377dc-5f1c-4a6e-bac3-dc8bae1e8e18 fwd="191.236.32.239" dyno=web.1 connect=4ms service=3ms status=200 bytes=228
+2014-12-29T00:33:00.528583+00:00 heroku[router]: at=info method=GET path="/" host=arcane-citadel-8613.herokuapp.com request_id=eba68ba6-33b7-4bc1-acb5-15542458578c fwd="191.236.32.239" dyno=web.1 connect=2ms service=21ms status=304 bytes=734
+2014-12-29T00:33:00.513177+00:00 app[web.1]: Processing by PinsController#index as HTML
+2014-12-29T00:33:00.522318+00:00 app[web.1]:   Rendered pins/index.html.erb within layouts/application (5.9ms)
+2014-12-29T00:33:00.525233+00:00 app[web.1]: Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 1.4ms)
+2014-12-29T00:33:00.509720+00:00 app[web.1]: Started GET "/" for 191.236.32.239 at 2014-12-29 00:33:00 +0000
+2014-12-29T00:33:00.519881+00:00 app[web.1]:   Rendered pages/_home.html.erb (0.9ms)
+2014-12-29T00:33:00.524716+00:00 app[web.1]:   Rendered layouts/_header.html.erb (1.1ms)
+2014-12-29T00:33:06.237468+00:00 app[web.1]: Processing by PinsController#index as HTML
+2014-12-29T00:33:06.243174+00:00 app[web.1]: Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 1.2ms)
+2014-12-29T00:33:06.241791+00:00 app[web.1]:   Rendered pins/index.html.erb within layouts/application (2.9ms)
+2014-12-29T00:33:06.242837+00:00 app[web.1]:   Rendered layouts/_header.html.erb (0.5ms)
+2014-12-29T00:33:06.235079+00:00 app[web.1]: Started GET "/" for 191.236.32.239 at 2014-12-29 00:33:06 +0000
+2014-12-29T00:33:06.239847+00:00 app[web.1]:   Rendered pages/_home.html.erb (0.4ms)
+2014-12-29T00:33:06.245159+00:00 heroku[router]: at=info method=GET path="/" host=arcane-citadel-8613.herokuapp.com request_id=adfc9aa8-a7ac-4542-b277-bbc13dc77c18 fwd="191.236.32.239" dyno=web.1 connect=1ms service=13ms status=304 bytes=734
+2014-12-29T00:33:06.312220+00:00 heroku[router]: at=info method=GET path="/assets/application-b1d324b5ff6c61c90101d1709e18bb32.css" host=arcane-citadel-8613.herokuapp.com request_id=77e22d19-8550-4da8-abb2-8e563cde8e76 fwd="191.236.32.239" dyno=web.1 connect=1ms service=5ms status=304 bytes=133
+2014-12-29T00:33:06.315002+00:00 heroku[router]: at=info method=GET path="/assets/application-758fd4a5d06d56227c804efcbb0f4ba2.js" host=arcane-citadel-8613.herokuapp.com request_id=34fd3cd4-691f-40da-b22e-7f4d72c5f935 fwd="191.236.32.239" dyno=web.1 connect=1ms service=4ms status=304 bytes=133
+2014-12-29T00:33:06.576963+00:00 heroku[router]: at=info method=GET path="/fonts/bootstrap/glyphicons-halflings-regular.woff" host=arcane-citadel-8613.herokuapp.com request_id=0d56074d-abc2-40d4-ac27-d9d1362e804d fwd="191.236.32.239" dyno=web.1 connect=1ms service=7ms status=200 bytes=23549
+2014-12-29T00:33:10.137345+00:00 heroku[router]: at=info method=GET path="/users/sign_up" host=arcane-citadel-8613.herokuapp.com request_id=4e86a08f-ac80-483a-b8a2-c08081a1374b fwd="191.236.32.239" dyno=web.1 connect=1ms service=16ms status=304 bytes=734
+2014-12-29T00:33:10.120080+00:00 app[web.1]: Started GET "/users/sign_up" for 191.236.32.239 at 2014-12-29 00:33:10 +0000
+2014-12-29T00:33:10.130571+00:00 app[web.1]:   Rendered layouts/_header.html.erb (0.6ms)
+2014-12-29T00:33:10.129347+00:00 app[web.1]:   Rendered devise/shared/_links.html.erb (0.4ms)
+2014-12-29T00:33:10.130872+00:00 app[web.1]: Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+2014-12-29T00:33:10.122737+00:00 app[web.1]: Processing by Devise::RegistrationsController#new as HTML
+2014-12-29T00:33:10.129394+00:00 app[web.1]:   Rendered devise/registrations/new.html.erb within layouts/application (4.5ms)
+2014-12-29T00:33:17.555990+00:00 app[web.1]: Started POST "/users" for 191.236.32.239 at 2014-12-29 00:33:17 +0000
+2014-12-29T00:33:17.691503+00:00 app[web.1]: Processing by PinsController#index as HTML
+2014-12-29T00:33:17.699665+00:00 app[web.1]:   Rendered layouts/_header.html.erb (0.7ms)
+2014-12-29T00:33:17.558146+00:00 app[web.1]: Processing by Devise::RegistrationsController#create as HTML
+2014-12-29T00:33:17.660601+00:00 app[web.1]: Completed 302 Found in 102ms (ActiveRecord: 8.9ms)
+2014-12-29T00:33:17.558187+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"PxmcuwS/7UjHSpXBTTvWBtJUg95LyDHX/dQinp9Usf4=", "user"=>{"name"=>"Test", "email"=>"test@test.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+2014-12-29T00:33:17.660471+00:00 app[web.1]: Redirected to https://arcane-citadel-8613.herokuapp.com/
+2014-12-29T00:33:17.689525+00:00 app[web.1]: Started GET "/" for 191.236.32.239 at 2014-12-29 00:33:17 +0000
+2014-12-29T00:33:17.698252+00:00 app[web.1]:   Rendered pins/index.html.erb within layouts/application (5.4ms)
+2014-12-29T00:33:17.699996+00:00 app[web.1]: Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 2.4ms)
+2014-12-29T00:33:17.666966+00:00 heroku[router]: at=info method=POST path="/users" host=arcane-citadel-8613.herokuapp.com request_id=d1dac89c-7e85-4d76-9fc7-5d8ae91b5cdd fwd="191.236.32.239" dyno=web.1 connect=5ms service=113ms status=302 bytes=1198
+2014-12-29T00:33:17.705855+00:00 heroku[router]: at=info method=GET path="/" host=arcane-citadel-8613.herokuapp.com request_id=7e030cf5-f305-49e4-b332-1e31c003a79e fwd="191.236.32.239" dyno=web.1 connect=1ms service=15ms status=200 bytes=3196
+2014-12-29T00:33:17.862124+00:00 heroku[router]: at=info method=GET path="/avatars/thumb/missing.png" host=arcane-citadel-8613.herokuapp.com request_id=e47575c7-ce9f-4de0-95fb-a8cc7980b8dc fwd="191.236.32.239" dyno=web.1 connect=1ms service=7ms status=404 bytes=1829
+2014-12-29T00:33:17.853320+00:00 app[web.1]: Started GET "/avatars/thumb/missing.png" for 191.236.32.239 at 2014-12-29 00:33:17 +0000
+2014-12-29T00:33:17.855449+00:00 app[web.1]: 
+2014-12-29T00:33:17.855463+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+2014-12-29T00:33:17.855452+00:00 app[web.1]: ActionController::RoutingError (No route matches [GET] "/avatars/thumb/missing.png"):
+2014-12-29T00:33:17.855457+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:38:in `call_app'
+2014-12-29T00:33:17.855466+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+2014-12-29T00:33:17.855465+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+2014-12-29T00:33:17.855454+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+2014-12-29T00:33:17.855455+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+2014-12-29T00:33:17.855458+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+2014-12-29T00:33:17.855460+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+2014-12-29T00:33:17.855462+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+2014-12-29T00:33:17.855471+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+2014-12-29T00:33:17.855476+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+2014-12-29T00:33:17.855474+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+2014-12-29T00:33:17.855480+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+2014-12-29T00:33:17.855468+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+2014-12-29T00:33:17.855482+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+2014-12-29T00:33:17.855479+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+2014-12-29T00:33:17.855483+00:00 app[web.1]:   vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+2014-12-29T00:33:17.855469+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+2014-12-29T00:33:17.855473+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/static.rb:64:in `call'
+2014-12-29T00:33:17.855484+00:00 app[web.1]:   vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+2014-12-29T00:33:17.855477+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+2014-12-29T00:33:17.855489+00:00 app[web.1]: 
+2014-12-29T00:33:17.855487+00:00 app[web.1]: 
+2014-12-29T00:33:17.855486+00:00 app[web.1]:   vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+2014-12-29T00:33:20.751789+00:00 app[web.1]: Processing by PinsController#new as HTML
+2014-12-29T00:33:20.882163+00:00 app[web.1]: Completed 200 OK in 132ms (Views: 10.6ms | ActiveRecord: 9.6ms)
+2014-12-29T00:33:20.879778+00:00 app[web.1]:   Rendered pins/_form.html.erb (5.5ms)
+2014-12-29T00:33:20.880243+00:00 app[web.1]:   Rendered pins/new.html.erb within layouts/application (7.3ms)
+2014-12-29T00:33:20.881499+00:00 app[web.1]:   Rendered layouts/_header.html.erb (0.5ms)
+2014-12-29T00:33:20.747050+00:00 app[web.1]: Started GET "/pins/new" for 191.236.32.239 at 2014-12-29 00:33:20 +0000
+2014-12-29T00:33:20.888004+00:00 heroku[router]: at=info method=GET path="/pins/new" host=arcane-citadel-8613.herokuapp.com request_id=3123f50a-56e0-481b-95ed-a425105057c1 fwd="191.236.32.239" dyno=web.1 connect=1ms service=140ms status=200 bytes=3474
+2014-12-29T00:34:18.103273+00:00 app[web.1]: Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/e0deff349b2c61f5f796ccaa344a493020141229-2-jxs3vp.jpg[0]' 2>/dev/null
+2014-12-29T00:34:18.036531+00:00 app[web.1]: Started POST "/pins" for 191.236.32.239 at 2014-12-29 00:34:18 +0000
+2014-12-29T00:34:18.039749+00:00 app[web.1]: Processing by PinsController#create as HTML
+2014-12-29T00:34:18.225208+00:00 app[web.1]: Command :: identify -format %m '/tmp/e0deff349b2c61f5f796ccaa344a493020141229-2-jxs3vp.jpg[0]'
+2014-12-29T00:34:18.039757+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"PxmcuwS/7UjHSpXBTTvWBtJUg95LyDHX/dQinp9Usf4=", "pin"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007f5f21ceeac8 @tempfile=#<Tempfile:/tmp/RackMultipart20141229-2-1bpasb0>, @original_filename="fruit.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pin[image]\"; filename=\"fruit.jpg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>""}, "commit"=>"Create Pin"}
+2014-12-29T00:34:18.051039+00:00 app[web.1]: Command :: file -b --mime '/tmp/e0deff349b2c61f5f796ccaa344a493020141229-2-1dw2b2w.jpg'
+2014-12-29T00:34:18.304999+00:00 app[web.1]: Command :: convert '/tmp/e0deff349b2c61f5f796ccaa344a493020141229-2-jxs3vp.jpg[0]' -auto-orient -resize "300x300>" '/tmp/e0deff349b2c61f5f796ccaa344a493020141229-2-jxs3vp20141229-2-16vz0qy'
+2014-12-29T00:34:18.556530+00:00 app[web.1]: Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/e0deff349b2c61f5f796ccaa344a493020141229-2-jxs3vp.jpg[0]' 2>/dev/null
+2014-12-29T00:34:18.515696+00:00 app[web.1]: Command :: file -b --mime '/tmp/e0deff349b2c61f5f796ccaa344a493020141229-2-jxs3vp20141229-2-16vz0qy'
+2014-12-29T00:34:18.680185+00:00 app[web.1]: Command :: identify -format %m '/tmp/e0deff349b2c61f5f796ccaa344a493020141229-2-jxs3vp.jpg[0]'
+2014-12-29T00:34:18.959842+00:00 app[web.1]: Command :: file -b --mime '/tmp/e0deff349b2c61f5f796ccaa344a493020141229-2-jxs3vp20141229-2-kz5k15'
+2014-12-29T00:34:18.759566+00:00 app[web.1]: Command :: convert '/tmp/e0deff349b2c61f5f796ccaa344a493020141229-2-jxs3vp.jpg[0]' -auto-orient -resize "100x100>" '/tmp/e0deff349b2c61f5f796ccaa344a493020141229-2-jxs3vp20141229-2-kz5k15'
+2014-12-29T00:34:19.115757+00:00 app[web.1]: AWS::S3::Errors::AccessDenied (Access Denied):
+2014-12-29T00:34:19.115755+00:00 app[web.1]: 
+2014-12-29T00:34:19.115762+00:00 app[web.1]: 
+2014-12-29T00:34:19.008280+00:00 app[web.1]: Command :: file -b --mime '/tmp/e0deff349b2c61f5f796ccaa344a493020141229-2-pef94x.jpg'
+2014-12-29T00:34:19.054548+00:00 app[web.1]: [paperclip] saving /app/app/assets/images/2/original/fruit.jpg
+2014-12-29T00:34:19.115760+00:00 app[web.1]: 
+2014-12-29T00:34:19.115759+00:00 app[web.1]:   app/controllers/pins_controller.rb:22:in `create'
+2014-12-29T00:34:19.111880+00:00 app[web.1]: 
+2014-12-29T00:34:19.111874+00:00 app[web.1]: [AWS S3 403 0.054408 0 retries] put_object(:acl=>:public_read,:bucket_name=>"amypint",:content_length=>276171,:content_type=>"image/jpeg",:data=>Paperclip::UploadedFileAdapter: fruit.jpg,:key=>"app/app/assets/images/2/original/fruit.jpg") AWS::S3::Errors::AccessDenied Access Denied
+2014-12-29T00:34:19.114008+00:00 app[web.1]: Completed 500 Internal Server Error in 1074ms
+2014-12-29T00:34:19.121374+00:00 heroku[router]: at=info method=POST path="/pins" host=arcane-citadel-8613.herokuapp.com request_id=d4781461-3733-462b-80fd-2d1e3d8c83e2 fwd="191.236.32.239" dyno=web.1 connect=5ms service=1116ms status=500 bytes=1754
