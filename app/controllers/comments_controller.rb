@@ -25,6 +25,7 @@ class CommentsController < ApplicationController
   def create   
     @pin = Pin.find(params[:pin_id])
     @comment = @pin.comments.build(comment_params)
+    current_user.comments << @comment
     if @comment.save
       redirect_to @comment, notice: 'Comment was successfully created.'
     else

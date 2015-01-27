@@ -12,6 +12,7 @@ class User < ActiveRecord::Base
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/      
   validates :name, presence: true
   has_many :pins
+  has_many :comments
 end
 
 

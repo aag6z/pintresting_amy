@@ -23,8 +23,10 @@
             		<% end %>
             	<% end %>
             		<br>
+            		<% if user_signed_in? %>
             		<% url = pin.image.url(:medium)%>
             		<%= link_to new_pin_comment_path(pin, :url => url) do %><span class="glyphicon glyphicon-comment"></span> Comment
+            		<% end %>
             		<% end %>
           	</div>
         	
@@ -32,7 +34,8 @@
         	<% @comments = pin.comments %>
         	<% @comments.each do |comment|%>
         	<blockquote>
-        	<%= comment.text %>
+        	
+        	<%= comment.user.name %>
         	</blockquote>
         	<br>
         	<% end %>
