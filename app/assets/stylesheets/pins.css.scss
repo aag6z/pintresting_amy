@@ -10,9 +10,12 @@
   width: 214px;
 }
 
+
 .box img {
   width: 100%;
 }
+
+
 
 #username {
   text-align: center;
@@ -25,4 +28,13 @@
   
 }
 
+#userDets {
+  
+  padding-bottom: 5px;
+  
+}
 
+#userDets .img-thumbnail {
+  
+  max-width: 45%;
+}

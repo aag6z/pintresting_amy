@@ -1,7 +1,7 @@
 <%= render 'pages/home' unless user_signed_in? %>
 <% if user_signed_in? %>
 <div id="username">
-	<%= image_tag(current_user.avatar.url(:thumb), class: "img-circle") %>
+	<%= image_tag(current_user.avatar.url(:thumb), class: "img-thumbnail") %>
 	<%= current_user.name %>
 </div>
 
@@ -11,7 +11,7 @@
 	<% @pins.each do |pin| %>
 		<div class="box panel panel-default">
       		<%= image_tag pin.image.url(:medium) %>
-      		<div class="panel-body">
+      		<div id="pinBoard" class="panel-body">
         	<%= pin.description %><br/>
         	<strong><%= pin.user.name if pin.user %></strong>
         	       	
@@ -30,7 +30,19 @@
             		<% end %>
           	</div>
         	
-        	
+        	<br>
+             <% @comments = pin.comments %>
+             <% @comments.each do |comment|%>
+             <blockquote>
+             	<div id="userDets">
+             	<%= image_tag(comment.user.avatar.url(:thumb), class: "img-thumbnail") %>
+             	<%= comment.user.name %><br>
+            	</div>
+            	<%= comment.text %>
+             </blockquote>
+             <br>
+             <% end %>
+
       		</div>
   			</div>
 	<% end %>

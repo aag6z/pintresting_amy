@@ -14,8 +14,9 @@ class CommentsController < ApplicationController
 
   def new
     @pin = Pin.find(params[:pin_id])
-    @comment = Comment.new
-    respond_with(@comment)
+    @comment = @pin.comments.build
+   # @comment = Comment.new
+   # respond_with(@comment)
     
   end
 
@@ -24,14 +25,15 @@ class CommentsController < ApplicationController
 
   def create   
     @pin = Pin.find(params[:pin_id])
+    @comment = @pin.comments.build(comment_params)
     #@comment = @pin.comments.build(comment_params)
-    @comment = Comment.new(comment_params)
-    
+    #@comment = Comment.new(comment_params)
+    @comment.user_id = current_user.id
     #current_user.comments << @comment
     if @comment.save
-      @pin.comment_id  = @comment.id
-      @pin.save
-      redirect_to @comment, notice: 'Comment was successfully created.'
+      #@pin.comment_id  = @comment.id
+      #@pin.save
+      redirect_to pins_path, notice: 'Thanks!'
     else
       render action: 'new'
     end
