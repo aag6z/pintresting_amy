@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -40,6 +40,8 @@ gem 'bootstrap-sass'
 gem 'devise'
 gem 'paperclip', github: 'thoughtbot/paperclip'
 gem 'aws-sdk', '~> 1.20.0'
+gem 'better_errors', '~> 2.1.1'
+gem 'binding_of_caller'
 gem 'jquery-turbolinks'
 gem 'masonry-rails', '~> 0.2.0'
 gem 'will_paginate', '~> 3.0.5'
